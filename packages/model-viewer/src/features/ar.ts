@@ -399,11 +399,11 @@ configuration or device capabilities');
         anchor.setAttribute('download', 'model.usdz');
       }
 
-      // attach anchor to shadow DOM to ensure iOS16 ARQL banner click message event propagation 
+      // attach anchor to shadow DOM to ensure iOS16 ARQL banner click message event propagation
       anchor.style.display = 'none';
       if(!anchor.isConnected) this.shadowRoot!.appendChild(anchor);
 
-      console.log('Attempting to present in AR with Quick Look...');
+      console.log('Attempting to present in AR with Quick Look...TATAR');
       anchor.click();
       anchor.removeChild(img);
       if (generateUsdz) {
